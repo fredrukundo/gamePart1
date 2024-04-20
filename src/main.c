@@ -82,7 +82,7 @@ int	main(int argc, char **argv)
 {
 	t_game	g;
 	char	**aux;
-atexit(ff);
+//atexit(ff);
 	check_file(argc, argv);
 	g = cub_init();
 	read_map(argv[1], &g);
