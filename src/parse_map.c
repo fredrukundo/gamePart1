@@ -12,6 +12,8 @@
 
 #include "../inc/cub3d.h"
 
+//this parsing is for helping me test my part of work
+
 void	check_walls(t_game *g, char **map, int i, int j)
 {
 	if (j - 1 >= 0 && j - 1 < g->height)
