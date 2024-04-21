@@ -82,7 +82,9 @@ static t_game	cub_init(void)
 	g.rate = 30;
 	return (g);
 }
-
+/*
+	@desc:
+*/
 int	main(int argc, char **argv)
 {
 	t_game	g;
