@@ -48,8 +48,8 @@ void	init_sprites(t_game *g)
 	g->tex.e_bak = NULL;
 	g->tex.w = NULL;
 	g->tex.w_bak = NULL;
-	g->tex.b = mlx_load_img(g->mlx_ptr, "textures/black.xpm");
-	g->scope = mlx_load_img(g->mlx_ptr, "textures/scope.xpm");
+	g->tex.b = mlx_load_img(g->mlx_ptr, "textures/black.xpm");//floor
+	g->scope = mlx_load_img(g->mlx_ptr, "textures/scope.xpm");//target
 	if (!g->tex.b || !g->tex.b->i || !g->scope || !g->scope->i)
 		cub_perror(inv_pwd, g, NULL, 1);
 }
