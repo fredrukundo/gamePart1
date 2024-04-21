@@ -12,6 +12,9 @@
 
 #include "../inc/cub3d.h"
 
+/*
+	@desc:
+*/
 static void	check_file(int argc, char **argv)
 {
 	int	fd;
