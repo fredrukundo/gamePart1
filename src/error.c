@@ -12,6 +12,9 @@
 
 #include "../inc/cub3d.h"
 
+/*
+	@desc:
+*/
 int	cub_perror(t_cub_err err, t_game *g, char *param, int c)
 {
 	if (!c)
@@ -39,6 +42,9 @@ int	cub_perror(t_cub_err err, t_game *g, char *param, int c)
 	return (1);
 }
 
+/*
+	@desc:
+*/
 void	cub_usage(int errno)
 {
 	ft_putstr_fd("Cub3D\nA simple raycaster with MinilibX\n\n", 2);
