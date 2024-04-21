@@ -53,7 +53,9 @@ void	init_sprites(t_game *g)
 	if (!g->tex.b || !g->tex.b->i || !g->scope || !g->scope->i)
 		cub_perror(inv_pwd, g, NULL, 1);
 }
-
+/*
+	desc:
+*/
 static t_game	cub_init(void)
 {
 	t_game	g;
