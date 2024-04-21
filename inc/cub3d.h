@@ -49,7 +49,7 @@
 #  define SIZE 7
 # endif
 
-/* Enum to handle various exit/error messages */
+/* Enum to handle various exit/error (invalid msg)messages */
 typedef enum e_cub_err
 {
 	end,
