@@ -74,15 +74,12 @@ static t_game	cub_init(void)
 	g.rate = 30;
 	return (g);
 }
-void ff()
-{
-	system("leaks output");
-}
+
 int	main(int argc, char **argv)
 {
 	t_game	g;
 	char	**aux;
-//atexit(ff);
+
 	check_file(argc, argv);
 	g = cub_init();
 	read_map(argv[1], &g);
