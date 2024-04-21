@@ -30,6 +30,9 @@ static void	check_file(int argc, char **argv)
 		cub_perror(inv_ext, NULL, NULL, 1);
 }
 
+/*
+	@desc:
+*/
 void	init_sprites(t_game *g)
 {
 	g->win_img.i = NULL;
