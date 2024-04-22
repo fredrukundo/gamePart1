@@ -15,7 +15,7 @@
 /*
 	@desc:
 	- When a key is released (keyup), its corresponding flag is set to 0,
-		indicating that the key is not pressed.
+		 indicating that the key is not pressed.
 */
 int	cub_keyup(int k, t_game *g)
 {
