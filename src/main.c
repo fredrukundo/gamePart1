@@ -16,7 +16,8 @@
 	@desc:
 	- This function checks the command-line arguments.
 	- It expects one argument which should be the filename of the map (.cub file).
-	- If the argument is missing or if the file doesn't exist, it prints an error message.
+	- If the argument is missing or if the file doesn't exist,
+			it prints an error message.
 	- If the argument is -h or --help, it shows the usage message.
 */
 static void	check_file(int argc, char **argv)
