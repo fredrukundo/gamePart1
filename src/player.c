@@ -12,6 +12,11 @@
 
 #include "../inc/cub3d.h"
 
+/*
+	@desc:
+	- moving the player based on the key pressed (k) and
+		updating the player's position in the game state
+*/
 void	move_pl(int k, t_game *g, float ray_cos, float ray_sin)
 {
 	float	angle;
