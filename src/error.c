@@ -14,6 +14,7 @@
 
 /*
 	@desc:
+	
 */
 int	cub_perror(t_cub_err err, t_game *g, char *param, int c)
 {
