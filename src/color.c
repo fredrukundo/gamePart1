@@ -12,11 +12,17 @@
 
 #include "../inc/cub3d.h"
 
+/*
+	@desc: creates a single integer value (32-bit) from a t_color structure 
+*/
 int	create_trgb(t_color c)
 {
 	return (c.t << 24 | c.r << 16 | c.g << 8 | c.b);
 }
 
+/*
+	@desc: extracts the t_color components from a single integer value (32-bit)
+*/
 t_color	create_rgbt(int col)
 {
 	t_color	c;
@@ -28,6 +34,10 @@ t_color	create_rgbt(int col)
 	return (c);
 }
 
+/*
+	@desc:
+	- sets the floor and ceiling colors based on the provided RGB values.
+*/
 void	get_cf_color(char **dir, t_game *g)
 {
 	char	**fc;
@@ -56,6 +66,11 @@ void	get_cf_color(char **dir, t_game *g)
 		g->tex.ceiling = create_trgb(aux);
 }
 
+/*
+	desc:
+	- Iterates through each pixel of the image.
+	- Inverts the color of each pixel by subtracting its original value from 0xFFFFFF.
+*/
 void	cub_invert_color(t_game *g)
 {
 	int		xy[2];
@@ -72,6 +87,10 @@ void	cub_invert_color(t_game *g)
 	}
 }
 
+/*
+	@desc:
+	- adjusts the color based on the distance to simulate a fading effect
+*/
 int	get_dist_color(int color, float ds, int tr)
 {
 	t_color	c;
