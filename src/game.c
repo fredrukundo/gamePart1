@@ -88,6 +88,11 @@ void	init_attr(t_game *g)
 	g->miniview.height = 15 * SIZE;
 }
 
+/*
+	@desc:
+	- calls init_attr and sets up key event handlers, ray initialization, update loop, 
+		and starts the main event loop.
+*/
 void	game_init(t_game *g)
 {
 	init_attr(g);
