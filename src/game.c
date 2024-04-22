@@ -48,6 +48,19 @@ int	cub_keydown(int k, t_game *g)
 	return (0);
 }
 
+/*
+	@desc:
+	- Creates a new window using mlx_new_window and assigns its pointer to g->win_ptr.
+	- Creates images for game rendering (win_img, win_g, win_r, minimap, miniview)
+		 using mlx_new_image.
+	- Retrieves the image data address and other attributes using mlx_get_data_addr
+		 and assigns them to respective members.
+	- Draws a green rectangle on g->win_g and a red rectangle on g->win_r 
+		using my_mlx_area_put
+	- Creates images for the minimap and miniview using dimensions calculated based
+		on g->width, g->height, and SIZE.
+	- Sets width and height for the miniview.
+*/
 void	init_attr(t_game *g)
 {
 	g->win_ptr = mlx_new_window(g->mlx_ptr, WIN_W, WIN_H, "Cub3D");
