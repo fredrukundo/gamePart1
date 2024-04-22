@@ -12,6 +12,11 @@
 
 #include "../inc/cub3d.h"
 
+/*
+	@desc:
+	- When a key is released (keyup), its corresponding flag is set to 0,
+		indicating that the key is not pressed.
+*/
 int	cub_keyup(int k, t_game *g)
 {
 	if (k == KEY_LEFT)
@@ -29,6 +34,11 @@ int	cub_keyup(int k, t_game *g)
 	return (0);
 }
 
+/*
+	@desc:
+	- When a key is pressed (keydown), its corresponding flag is set to 1,
+		indicating that the key is down.
+*/
 int	cub_keydown(int k, t_game *g)
 {
 	if (k == KEY_ESC)
