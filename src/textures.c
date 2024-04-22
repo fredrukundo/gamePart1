@@ -12,6 +12,16 @@
 
 #include "../inc/cub3d.h"
 
+/*
+	@desc:
+	- Determines which texture to use based on the ray's direction and surrounding tiles
+	algo:
+	- g->map[(int)(g->y - ray_sin)][(int)g->x] != '1':
+	- This checks the tile immediately above the ray's current position.
+	- If this tile is not a wall ('1'), the north (n) texture is selected.
+	- i = g->tex.n->content;:
+	- Sets the texture pointer i to the content of the north texture.
+*/
 t_img	*get_texture(t_game *g)
 {
 	t_img	*i;
@@ -36,6 +46,10 @@ t_img	*get_texture(t_game *g)
 	return (i);
 }
 
+/*
+	@desc:
+	- Gets the color of a pixel from a texture or returns a color for ceiling/closed.
+*/
 int	get_tex_color(t_game *g, t_img *i, int z)
 {
 	int	color;
@@ -49,6 +63,10 @@ int	get_tex_color(t_game *g, t_img *i, int z)
 	return (color);
 }
 
+/*
+	@desc:
+	- Draws the textured wall onto the game window.
+*/
 void	draw_texture(t_game *g, t_img *i, int ray_count, int wall_height)
 {
 	float	dy;
@@ -76,6 +94,10 @@ void	draw_texture(t_game *g, t_img *i, int ray_count, int wall_height)
 	}
 }
 
+/*
+	@desc:
+	-Combines everything to draw the wall with textures, considering wall height and distance.
+*/
 void	cub_draw(t_game *g, int ray_count, float dis)
 {
 	int		wall_height;
