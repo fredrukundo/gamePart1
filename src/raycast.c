@@ -54,7 +54,6 @@ void	init_ray(t_game *g)
 	- If it's close to the player's viewing direction, a green pixel is drawn.
 	- Otherwise, a light blue pixel is drawn.
 	- Finally, a yellow square is drawn on the minimap to represent the player's position.
-
 */
 float	distance_to_wall(t_game *g, float ray_angle)
 {
