@@ -12,7 +12,14 @@
 
 #include "../inc/cub3d.h"
 
-
+/*
+	@desc:
+	- updates the texture animations by moving to the next frame in the animation sequence.
+	- For each texture direction (north, south, east, west):
+	- Moves to the next frame (g->tex.n, g->tex.s, g->tex.e, g->tex.w).
+	- If the end of the animation sequence is reached (g->tex.n is NULL),
+		it resets to the beginning (g->tex.n_bak).
+*/
 void	update_anim(t_game *g)
 {
 	g->tex.n = g->tex.n->next;
@@ -29,6 +36,11 @@ void	update_anim(t_game *g)
 		g->tex.w = g->tex.w_bak;
 }
 
+/*
+	@desc:
+	- checks which movement keys are pressed and updates the player's position
+		or rotation angle accordingly.
+*/
 void	check_move(t_game *g)
 {
 	if (g->pl.keys.left_pressed)
@@ -45,6 +57,16 @@ void	check_move(t_game *g)
 		move_pl(KEY_D, g, 0, 0);
 }
 
+/*
+	@desc:
+	- Checks if it's time to update based on the nframes and rate variables.
+	- Updates animations every 2 frames.
+	- Resets the player's door cooldown every 10 frames.
+	- Calls check_move to update player movement.
+	- Calls cub_raycast to perform raycasting and update the scene.
+	- Inverts colors if g->neg is set.
+	- Updates the game window with the new image.
+*/
 int	cub_update(void *param)
 {
 	t_game	*g;
