@@ -21,6 +21,7 @@
 		(2 * HFOV / window_width)
 	- g->ray.precision: Sets the Size of 'steps' taken every iteration.
 	- g->ray.lim: Sets a Limit of the distance the player can view.
+	
 */
 void	init_ray(t_game *g)
 {
