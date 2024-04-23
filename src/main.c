@@ -6,7 +6,7 @@
 /*   By: frukundo <frukundo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 03:28:02 by frukundo          #+#    #+#             */
-/*   Updated: 2024/04/20 04:39:36 by frukundo         ###   ########.fr       */
+/*   Updated: 2024/04/23 01:24:18 by frukundo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,9 +54,9 @@ void	init_sprites(t_game *g)
 	g->tex.e_bak = NULL;
 	g->tex.w = NULL;
 	g->tex.w_bak = NULL;
-	g->tex.b = mlx_load_img(g->mlx_ptr, "textures/black.xpm");//floor
-	g->scope = mlx_load_img(g->mlx_ptr, "textures/scope.xpm");//target
-	if (!g->tex.b || !g->tex.b->i || !g->scope || !g->scope->i)
+	g->tex.b = mlx_load_img(g->mlx_ptr, "textures/black.xpm");
+	// g->scope = mlx_load_img(g->mlx_ptr, "textures/scope.xpm");//target
+	if (!g->tex.b || !g->tex.b->i)
 		cub_perror(inv_pwd, g, NULL, 1);
 }
 /*
@@ -91,11 +91,15 @@ static t_game	cub_init(void)
 /*
 	@desc: main function
 */
+void ff()
+{
+	system("leaks output");
+}
 int	main(int argc, char **argv)
 {
 	t_game	g;
 	char	**aux;
-
+atexit(ff);
 	check_file(argc, argv);
 	g = cub_init();
 	read_map(argv[1], &g);
