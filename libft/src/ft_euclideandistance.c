@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_euclideandistance.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aperez-b <aperez-b@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: frukundo <frukundo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/06 09:10:52 by aperez-b          #+#    #+#             */
-/*   Updated: 2021/09/27 16:31:21 by aperez-b         ###   ########.fr       */
+/*   Created: 2024/04/23 02:08:42 by frukundo          #+#    #+#             */
+/*   Updated: 2024/04/23 02:08:44 by frukundo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
