@@ -6,7 +6,7 @@
 /*   By: frukundo <frukundo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 03:28:29 by frukundo          #+#    #+#             */
-/*   Updated: 2024/04/20 03:28:30 by frukundo         ###   ########.fr       */
+/*   Updated: 2024/04/23 01:22:52 by frukundo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -144,7 +144,7 @@ typedef struct s_game
 	t_img		win_r;
 	t_img		minimap;
 	t_img		miniview;
-	t_img		*scope;
+	//t_img		*scope;
 	t_tex		tex;
 	t_ray		ray;
 	t_player	pl;
