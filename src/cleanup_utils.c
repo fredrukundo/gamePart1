@@ -6,7 +6,7 @@
 /*   By: frukundo <frukundo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 23:33:05 by frukundo          #+#    #+#             */
-/*   Updated: 2024/04/22 23:33:31 by frukundo         ###   ########.fr       */
+/*   Updated: 2024/04/23 01:26:28 by frukundo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,8 +50,8 @@ void	destroy_images(t_game *g)
 		mlx_destroy_image(g->mlx_ptr, g->win_g.i);
 	if (g->win_r.i)
 		mlx_destroy_image(g->mlx_ptr, g->win_r.i);
-	if (g->scope->i)
-		mlx_destroy_image(g->mlx_ptr, g->scope->i);
+	// if (g->scope->i)
+	// 	mlx_destroy_image(g->mlx_ptr, g->scope->i);
 	if (g->win_ptr)
 		mlx_destroy_window(g->mlx_ptr, g->win_ptr);
 	if (g->minimap.i)
@@ -59,7 +59,7 @@ void	destroy_images(t_game *g)
 	if (g->miniview.i)
 		mlx_destroy_image(g->mlx_ptr, g->miniview.i);
 	free(g->tex.b);
-	free(g->scope);
+	// free(g->scope);
 }
 
 /*
