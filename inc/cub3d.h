@@ -6,7 +6,7 @@
 /*   By: frukundo <frukundo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/20 03:28:29 by frukundo          #+#    #+#             */
-/*   Updated: 2024/04/23 01:22:52 by frukundo         ###   ########.fr       */
+/*   Updated: 2024/04/23 21:26:58 by frukundo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 # define CUB3D_H
 
 # include "../libft/inc/libft.h"
-// # include "keycodes.h"
 # include <mlx.h>
 # include "get_next_line.h"
 # include "my_mlx.h"
