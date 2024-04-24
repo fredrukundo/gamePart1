@@ -1,5 +1,5 @@
 # gamePart1
-it's time for building something fun.
+This project is a simple 3D maze game inspired by the classic Wolfenstein 3D game. It is written in C and uses the MinilibX library for graphical rendering.
 
 ## what to know
 
